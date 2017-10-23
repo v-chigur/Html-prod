@@ -1,0 +1,55 @@
+h1 {
+	background-color: #4516c5;
+	color: white;
+	width: 100%;
+	font-size: 2rem;
+	padding: 1.4rem;
+	margin: 0;
+	display: inline-block;
+	position: fixed;
+	z-index: 1;
+}
+
+h2 {
+	display: inline-block;
+	font-size: 2.7rem;
+	font-weight: bolder;
+	position: relative;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.article {
+	position: absolute;
+	margin: 7rem auto;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.text {
+	padding: 1rem 0 0 0;
+}
+
+#topic {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#date {
+	border-radius: .3rem;
+	font-size: 1rem;
+	padding: .5rem;
+	background-color: #ddd;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: .7rem;
+}
