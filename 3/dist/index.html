@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>задание4</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <div class="container">
+            <!--
+             <div class="block block1">   
+                 <h1>sample note</h1>
+                 <p> a reminder to do something idk</p>
+             </div>
+            -->
+        </div>  
+    </body>
+    <script>
+        { data }
+        console.log(data)
+        function makeNote(el, ind) {
+            let h = document.createElement('h1')
+            let p = document.createElement('p')
+            let s = document.createElement('div')
+            h.textContent = data[ind]['title']
+            p.textContent = data[ind]['content']
+            s.textContent = data[ind]['stub']
+            s.classList.add('stub')
+            el.appendChild(h)
+            el.appendChild(p)
+            el.appendChild(s)
+        }
+        var d = document.querySelector('.container')
+        
+        for (var i = 1; i <= 4; i++) {
+            let el = document.createElement('div')
+            el.classList.add('block')
+            el.classList.add('block' + i.toString())
+            makeNote(el, i - 1)
+            d.appendChild(el)
+        }
+    </script>
+</html>
