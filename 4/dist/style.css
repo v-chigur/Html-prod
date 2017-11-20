@@ -1,0 +1,72 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    padding: .4rem 0 0 0;
+}
+
+.container {
+    padding: 3rem;
+    width: 80%;
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    width: 13rem;
+    min-height: 13rem;
+    margin: 1em 1rem 0 0;
+    box-shadow: 1px 1px 2px #aaa;
+}
+
+.block1 {
+    background-color: rgb(253, 255, 141);
+}
+
+.block2 {
+    background-color: rgb(251, 208, 125);
+}
+
+.block3 {
+    background-color: rgb(253, 137, 128);
+}
+
+.block4 {
+    background-color: rgb(128, 216, 253);
+}
+
+.block:hover .stub {
+    display: flex;
+    align-self: flex-end;
+}
+
+.stub {
+    display: none;
+}
+
+.button {
+    display: fixed;
+    float: right;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 30px 60px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 198px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .block {
+        width: 100%;
+        margin-right: 0;
+    }
+}

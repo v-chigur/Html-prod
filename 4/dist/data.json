@@ -1,0 +1,26 @@
+[
+	{
+		"title":"Колок",
+		"content":"Затащить на пятюню",
+		"color":"yellow",
+		"stub":"Actions"
+	},
+	{
+		"title":"Практика по фронтенду",
+		"content":"Написать убийцу Google Keep",
+		"color":"orange",
+		"stub":"Actions"
+	},
+	{
+		"title":"Вынести мусор",
+		"content":"Не забыть вставить смешную шутку",
+		"color":"red",
+		"stub":"Actions"
+	},
+	{
+		"title":"Найти оригинальные идеи",
+		"content":"спасите у меня нет сил придумывать текст этих заметок",
+		"color":"blue",
+		"stub":"Actions"
+	}
+]
