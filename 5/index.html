@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>задание5</title>
+    </head>
+    <body>
+        <div>
+            <label for='name'> username: </label>
+            <input id='name'/>
+            <button id='send'>send</button>
+        </div>
+    </body>
+    <script>
+        var $send = document.getElementById('send')
+        $send.addEventListener('click', function() {
+            const xhr = new XMLHttpRequest()
+            const $input = document.getElementById('name')
+            var api = 'http://localhost:8080'
+            xhr.open('POST', api)
+
+            xhr.onreadystatechange = function () {
+
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                    console.log(JSON.parse(xhr.responseText))
+                }
+            }
+
+            xhr.send($input.value)
+        })
+
+    </script>
+</html>
